@@ -1,5 +1,8 @@
 {
-  "name": "react-components",
+  "name": "@lunfman/react-components",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@lunfman"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -43,12 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lunfman/lunfman-react-components.git"
+    "url": "https://github.com/lunfman/react-components.git"
   },
   "bugs": {
-    "url": "https://github.com/lunfman/lunfman-react-components/issues"
+    "url": "https://github.com/lunfman/react-components/issues"
   },
-  "homepage": "https://github.com/lunfman/lunfman-react-components",
+  "homepage": "https://github.com/lunfman/react-components",
   "license": "ISC",
   "author": "lunfman",
   "devDependencies": {
