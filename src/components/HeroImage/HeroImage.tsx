@@ -28,7 +28,7 @@ export default function HeroImage(props: HeroImageProps): JSX.Element{
     }
 
     return(
-        <section  style={heroStyle}>
+        <section  style={heroStyle} data-testid='heroImage'>
             <div>
                 {children}
             </div>
