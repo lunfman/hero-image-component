@@ -54,8 +54,8 @@ Optional Props:
 ```
 
 Optional Props:
-`titleFontSize`: font size
-`titleWeight`: font weight
+`fontSize`
+`fontWeight`
 
 ### HeroSubTitle - component which can be used inside of the HeroImage after Title for description or another purpose.
 Has the same props as HeroTitle
