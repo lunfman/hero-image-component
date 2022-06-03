@@ -9,7 +9,6 @@ test('HeroImage rendering', () => {
     const heroImage = screen.getByTestId('heroImage')
     expect(heroImage).toBeTruthy()
     expect(heroImage).toHaveStyle('height: 100vh')
-    console.log(heroImage.style)
 })
 
 test('HeroImage rendering', () => {

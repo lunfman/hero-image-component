@@ -1,17 +1,17 @@
 import React from "react";
 
 interface HeroTitleProps {
-    children: React.ReactNode
-    titleFontSize?: string,
-    titleWeight?: string
+    children: React.ReactNode,
+    fontSize?: string,
+    fontWeight?: string
 }
 
 export default function HeroTitle(props: HeroTitleProps): JSX.Element{
-    const {children, titleFontSize, titleWeight} = props
+    const {children, fontSize, fontWeight} = props
     
     const titleStyle = {
-        fontSize: titleFontSize ? titleFontSize : '3rem',
-        fontWeight: titleWeight ? titleWeight : '600',
+        fontSize: fontSize ? fontSize : '3rem',
+        fontWeight: fontWeight ? fontWeight : '600',
         marginBottom: '0',
         }
         return(

@@ -1,18 +1,18 @@
 import React from "react";
 
-interface HeroSubTitleProps {
+interface HeroSubtitleProps {
     children: React.ReactNode,
-    subTitleFontSize?: string,
-    subTitleFontWeight?: string
+    fontSize?: string,
+    fontWeight?: string
 }
 
-export default function HeroSubTitle(props: HeroSubTitleProps): JSX.Element{
+export default function HeroSubtitle(props: HeroSubtitleProps): JSX.Element{
 
-    const {children, subTitleFontSize, subTitleFontWeight}  = props
+    const {children, fontSize, fontWeight}  = props
 
     const subTitleStyle = {
-        fontSize: subTitleFontSize ? subTitleFontSize : '2rem',
-        fontWeight: subTitleFontWeight? subTitleFontWeight : '200',
+        fontSize: fontSize ? fontSize : '2rem',
+        fontWeight: fontWeight? fontWeight : '200',
         marginTop: '1rem',
     }
 
