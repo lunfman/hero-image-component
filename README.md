@@ -1,10 +1,31 @@
 # @lunfman/react-components
 
 Reuseable react components.
+## HeroImage
+Example:
+```
+import { HeroImage, HeroTitle, HeroSubTitle } from '@lunfman/react-components';
 
-## HeroImage - component which allow to create hero image in a seconds.
+export default function Hero() {
+  return (
+    <HeroImage 
+    imgUrl='/path'
+    heroHeight='70vh'
+    >
+      <HeroTitle>
+        Best Title
+      </HeroTitle>
+      <HeroSubTitle>
+        Description of the project
+      </HeroSubTitle>
+    </HeroImage>
 
-!!If you are using this component add the next line to css
+  );
+}
+```
+### HeroImage - component which allow to create hero image in a seconds.
+
+⚠️If you are using this component add the next line to css⚠️
 ```
 body{
     margin: 0;
@@ -12,7 +33,9 @@ body{
 ....
 ```
 
-Required Prop: imgUrl - path/url of the img
+Required Prop:
+
+`imgUrl` - path/url of the img
 
 Optional Props:
 
@@ -22,7 +45,7 @@ Optional Props:
 
 `children`: can be used to add title / subtitle or other content which will be displayed over the hero image
 
-## HeroTitle - component which can be used as children prop in HeroImage to display title
+### HeroTitle - component which can be used as children prop in HeroImage to display title
 
 ```
 <HeroTitle>
@@ -34,8 +57,5 @@ Optional Props:
 `titleFontSize`: font size
 `titleWeight`: font weight
 
-## HeroSubTitle - component which can be used inside of the HeroImage after Title for description or another purpose.
-
-Optional Props:
-`titleFontSize`: font size
-`titleWeight`: font weight
+### HeroSubTitle - component which can be used inside of the HeroImage after Title for description or another purpose.
+Has the same props as HeroTitle
