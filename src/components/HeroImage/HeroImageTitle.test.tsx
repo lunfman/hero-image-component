@@ -1,7 +1,7 @@
 import React from 'react'
 import {render, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
-import HeroTitle from './HeroImageTitle'
+import HeroTitle from './HeroTitle'
 
 test('test HeroTitle', () => {
     render(

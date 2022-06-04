@@ -1,6 +1,6 @@
 import HeroImage from "./HeroImage"
-import HeroSubtitle from "./HeroImageSubtitle"
-import HeroTitle from "./HeroImageTitle"
+import HeroSubtitle from "./HeroSubtitle"
+import HeroTitle from "./HeroTitle"
 
 export {
     HeroImage,

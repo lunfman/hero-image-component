@@ -1,2 +1,2 @@
-import { HeroImage, HeroSubTitle, HeroTitle } from "./HeroImage"
-export{HeroImage, HeroSubTitle, HeroTitle}
+import { HeroImage, HeroSubtitle, HeroTitle } from "./HeroImage"
+export{HeroImage, HeroSubtitle, HeroTitle}

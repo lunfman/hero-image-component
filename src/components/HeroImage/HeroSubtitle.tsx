@@ -1,7 +1,7 @@
 import React from "react";
 
 interface HeroSubtitleProps {
-    children: React.ReactNode,
+    children?: React.ReactNode,
     fontSize?: string,
     fontWeight?: string
 }
