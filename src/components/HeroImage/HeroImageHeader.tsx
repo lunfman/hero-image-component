@@ -9,8 +9,6 @@ interface HeroImageHeaderProps{
     subtitle?: string,
 }
 
-// document.body.style.margin = '0'
-
 export default function HeroImageHeader(props: HeroImageHeaderProps): JSX.Element{
     const {imgUrl, title, subtitle} = props
 
