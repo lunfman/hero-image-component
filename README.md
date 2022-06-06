@@ -45,7 +45,7 @@ Optional Props:
 
 `children`: can be used to add title / subtitle or other content which will be displayed over the hero image
 
-### HeroTitle - component which can be used as children prop in HeroImage to display title
+### `HeroTitle` - component which can be used as children prop in HeroImage to display title
 
 ```
 <HeroTitle>
@@ -57,5 +57,22 @@ Optional Props:
 `fontSize`
 `fontWeight`
 
-### HeroSubTitle - component which can be used inside of the HeroImage after Title for description or another purpose.
+### `HeroSubTitle` - component which can be used inside of the HeroImage after Title for description or another purpose.
 Has the same props as HeroTitle
+
+### `HeroImageHeader` - Mix of HeroImage, HeroTitle, HeroSubTitle
+⚠️Not customizable -> uses default styling⚠️
+
+`imgUrl` - path/url of the img
+
+`title` - (optional) title which will be placed over the image
+
+`subtitle` - (optional) subtitle which will be palaced over the image
+```
+import { HeroImageHeader} from '@lunfman/react-components';
+<HeroImageHeader
+  imgUrl='url of the image'
+  title='My Super Title'
+  subtitle='My Super Subtitle'
+  />
+```
