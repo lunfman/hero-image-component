@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import HeroImageHeader from "./HeroImageHeader";
 
 export default {
-    title:'react-components/HeroImageHeader',
+    title:'HeroImage-Components/HeroImageHeader',
     component: HeroImageHeader,
     parameters: {
         layout: 'fullscreen'

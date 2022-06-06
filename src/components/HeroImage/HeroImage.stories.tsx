@@ -9,7 +9,7 @@ import { HeroImageSubtitle } from "./HeroSubtitle.stories";
 
 
 export default {
-    title:'react-components/HeroImage',
+    title:'HeroImage-Components/HeroImage',
     component: HeroImage,
 } as ComponentMeta<typeof HeroImage>
 

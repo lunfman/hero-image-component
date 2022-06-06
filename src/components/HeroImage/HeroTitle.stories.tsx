@@ -4,7 +4,7 @@ import HeroTitle from "./HeroTitle";
 
 
 export default {
-    title:'react-components/HeroTitle',
+    title:'HeroImage-Components/HeroTitle',
     component: HeroTitle,
 } as ComponentMeta<typeof HeroTitle>
 

@@ -4,7 +4,7 @@ import HeroSubtitle from "./HeroSubtitle";
 
 
 export default {
-    title:'react-components/HeroSubtitle',
+    title:'HeroImage-Components/HeroSubtitle',
     component: HeroSubtitle,
 } as ComponentMeta<typeof HeroSubtitle>
 
