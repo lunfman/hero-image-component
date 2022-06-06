@@ -4,10 +4,6 @@ import HeroImage from "./HeroImage";
 import { HeroImageTitle } from "./HeroTitle.stories";
 import { HeroImageSubtitle } from "./HeroSubtitle.stories";
 
-
-
-
-
 export default {
     title:'HeroImage-Components/HeroImage',
     component: HeroImage,
