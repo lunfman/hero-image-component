@@ -15,7 +15,7 @@ interface ModalProps{
 }
 
 export default function Modal(props: ModalProps): JSX.Element{
-  const {closeMe, isOpen} = props
+  const {closeMe, isOpen, children} = props
   const {open, handleCloseClick} = useModalLogic(closeMe, isOpen)
 
   const style = {
@@ -26,7 +26,7 @@ export default function Modal(props: ModalProps): JSX.Element{
         <div className='modal' style={style} data-testid='modal'>
           <div className="modal-content" >
             <span onClick={handleCloseClick} className="close" data-testid='close-btn'>&times;</span>
-            {props.children}
+            {children}
           </div>
         </div>
     )
