@@ -45,7 +45,7 @@ Optional Props:
 
 `children`: can be used to add title / subtitle or other content which will be displayed over the hero image
 
-### `HeroTitle` - component which can be used as children prop in HeroImage to display title
+### HeroTitle - component which can be used as children prop in HeroImage to display title
 
 ```
 <HeroTitle>
@@ -57,10 +57,10 @@ Optional Props:
 `fontSize`
 `fontWeight`
 
-### `HeroSubTitle` - component which can be used inside of the HeroImage after Title for description or another purpose.
+### HeroSubTitle - component which can be used inside of the HeroImage after Title for description or another purpose.
 Has the same props as HeroTitle
 
-### `HeroImageHeader` - Mix of HeroImage, HeroTitle, HeroSubTitle
+### HeroImageHeader - Mix of HeroImage, HeroTitle, HeroSubTitle
 ⚠️Not customizable -> uses default styling⚠️
 
 `imgUrl` - path/url of the img
@@ -75,4 +75,48 @@ import { HeroImageHeader} from '@lunfman/react-components';
   title='My Super Title'
   subtitle='My Super Subtitle'
   />
+```
+
+## Modal 
+Component for creating responsive modals
+
+Required props:
+
+`isOpen` - state which check in parent component is modal opened or not
+
+`closeMe` - callback function which is going to be triggered when modal closed
+
+`children` - JSX inside of the modal
+
+
+```
+import React from "react";
+import { useState } from "react";
+import Modal from "./Modal";
+
+export default function ModalDemo(){
+    const [isOpen, setIsOpen] = useState(false)
+    
+    // change state of isOpen to true
+    const openMe = () => {
+        setIsOpen(true)
+    }
+    // change state of isOpen to false
+    const closeMe = () => {
+        setIsOpen(false)
+    }
+
+    return(
+        <>
+        <button onClick={openMe}>Open modal</button>
+        <Modal
+            isOpen={isOpen}
+            closeMe={closeMe}
+        >
+            <h1>Title of the modal</h1>
+            <p>Some content</p>
+        </Modal>
+        </>
+    )
+}
 ```
