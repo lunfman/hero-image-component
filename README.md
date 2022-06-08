@@ -92,7 +92,7 @@ Required props:
 ```
 import React from "react";
 import { useState } from "react";
-import Modal from "./Modal";
+import { Modal } from "'@lunfman/react-components'";
 
 export default function ModalDemo(){
     const [isOpen, setIsOpen] = useState(false)
@@ -119,4 +119,32 @@ export default function ModalDemo(){
         </>
     )
 }
+```
+
+## Badge
+Badge component allow to create customizable badge over image.
+
+Badge component optional props:
+
+`right`: string - horizontal position of the badge over the image
+by default `-22px`
+
+`top`: string - vertical position by default `10px`
+
+`background`: string - background color
+
+`color`: sting - text color
+
+`fontSize`: string - size of the text 
+
+```
+import {CardImageBadge, Badge} from '@lunfman/react-components'
+
+<CardImageBadge>
+  <Badge>
+    Text In Badge
+  <Badge/>
+  <img src = 'path'>
+<CardImageBadge/>
+
 ```
